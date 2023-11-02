@@ -10,8 +10,14 @@ doesKeyExist(obj1, 'course'); // => true
 doesKeyExist(obj1, 'name'); // => false
 ***********************************************************************/
 
-function doesKeyExist(obj, key) {
-  // Your code here 
+function doesKeyExist(obj, targetKey) {
+  // Your code here
+  for(let key in obj) {
+    if(key === targetKey){
+      return true
+    }
+  }
+  return false
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
