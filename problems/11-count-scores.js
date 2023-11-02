@@ -32,7 +32,12 @@ function countScores(people) {
   let res = {};
 
   for (let i = 0; i < people.length; i++) {
-    if (people[i][])
+    let subArr = people[i]
+    if (typeof res[subArr.name] === "undefined") {
+      res[subArr.name] = subArr.score;
+    } else {
+      res[subArr.name] += subArr.score;
+    }
   }
 
   return res;
