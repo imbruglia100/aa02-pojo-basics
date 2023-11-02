@@ -22,9 +22,11 @@ keyInObjectArray(objArray, 'animal'); // => false
 function keyInObjectArray(objArray, keyString) {
   // Your code here
   for(let i = 0; i < objArray.length; i++){
-    let currentObj = objArray[i]
-    if(keyString === currentObj){
-      
+    let currentObj = objArray[i];
+    for (let key in currentObj) {
+      if (key === keyString) {
+        return true;
+      }
     }
   }
 
