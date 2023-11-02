@@ -11,7 +11,12 @@ getFullName(p2); // => 'Charlie Brown'
 ***********************************************************************/
 
 function getFullName(person) {
-  // Your code here 
+  // Your code here
+  let fullName = "";
+
+  fullName = Object.values(person).filter(str => typeof str !== "string").join(" ");
+
+  return fullName;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

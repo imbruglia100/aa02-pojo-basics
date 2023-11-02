@@ -1,5 +1,5 @@
 /***********************************************************************
-Write a function called `keysInObject(obj)` that takes in an object and returns 
+Write a function called `keysInObject(obj)` that takes in an object and returns
 an array of all the keys within that Object.
 
 Do this once using using a `for...in` loop and once using `Object.keys`.
@@ -12,8 +12,24 @@ keysInObject(animals); // => ["dog", "cat", "bison"]
 keysInObject(foods); // => ["apple", "lemon", "mango"]
 ***********************************************************************/
 
+// function keysInObject(obj) {
+//   // Your code here
+//   let res = [];
+
+//   for (let key in obj) {
+
+//     res.push(key);
+
+//   }
+
+//   return res;
+// }
+
 function keysInObject(obj) {
-  // Your code here 
+
+  let res = Object.keys(obj);
+  return res;
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
