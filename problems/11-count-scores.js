@@ -28,7 +28,14 @@ console.log(countScores(peeps)); //=> { Anthony: 4, Fred: 4, Winnie: 6 }
 ***********************************************************************/
 
 function countScores(people) {
-  // Your code here 
+  // Your code here
+  let res = {};
+
+  for (let i = 0; i < people.length; i++) {
+    if (people[i][])
+  }
+
+  return res;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

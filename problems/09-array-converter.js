@@ -16,8 +16,10 @@ function arrayConverter(array) {
   let res = {};
 
   for (let i = 0; i < array.length; i++) {
-    if (typeof res[array[i]] === undefined) {
-      res[array[i] ==]
+    if (typeof res[array[i]] === "undefined") {
+      res[array[i]] = 1;
+    } else {
+      res[array[i]] += 1;
     }
   }
 
